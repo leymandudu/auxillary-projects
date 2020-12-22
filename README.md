@@ -46,7 +46,7 @@ username=$(cat users.csv)
         echo
 
 ## Creating and setting public key for users
-        cp -R "/home/adeleye/.ssh/id_rsa.pub" "/home/$name/.ssh/authorized_keys"
+        cp -R "/home/adeleye/.ssh/auxproject.pub" "/home/$name/.ssh/authorized_keys"
         echo "Copying public key to use account"
         echo
 
@@ -58,3 +58,12 @@ username=$(cat users.csv)
     else
     echo "Only root may add a user to the system"
     fi
+
+
+
+## Issues encountered while creating the users
+* The initial public and private key on the project site is corrupt or missing some element and i got this error message;
+
+        Load key “/home/adeleye/.ssh/id_rsa.pub”: invalid format"
+
+* I forgot to add appropriate permission to the /.ssh folder where my keys are stored.

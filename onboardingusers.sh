@@ -42,7 +42,7 @@ if [ $(id -u) -eq 0 ]; then
         	echo
 
 # Creating and setting public key for users
-        	cp -R "/home/adeleye/.ssh/id_rsa.pub" "/home/$name/.ssh/authorized_keys"
+        	cp -R "/home/adeleye/.ssh/auxproject.pub" "/home/$name/.ssh/authorized_keys"
         	echo "Copying public key to use account"
         	echo
 
