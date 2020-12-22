@@ -1,4 +1,4 @@
-# The Auxilliary Project README
+# The Auxilliary Project
 
 ## This script is written to automate adding new user on a linux server.
 ## The script will also check if the user exists before creating it.
@@ -62,7 +62,7 @@ username=$(cat users.csv)
 
 
 ## Issues encountered while creating the users
-* The initial public and private key on the project site is corrupt or missing some element and i got this error message;
+* The initial public and private key on the project site is corrupt or missing some element and I got this error message;
 
         Load key “/home/adeleye/.ssh/id_rsa.pub”: invalid format"
 
